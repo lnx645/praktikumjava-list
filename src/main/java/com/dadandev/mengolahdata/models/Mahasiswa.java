@@ -1,0 +1,29 @@
+package com.dadandev.mengolahdata.models;
+
+public class Mahasiswa {
+    String nama;
+    String nim;
+    int nilai;
+
+    public Mahasiswa(String nama, String nim, int nilai) {
+        this.nama = nama;
+        this.nim = nim;
+        this.nilai = nilai;
+    }
+
+    public int getNilai() {
+        return nilai;
+    }
+    
+    public String getNim() {
+        return nim;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+    @Override
+    public String toString() {
+        return String.format("Nama:%s Nim:%s Nilai: %s", this.nama, this.nim, this.nilai);
+    }
+}
