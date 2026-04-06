@@ -11,7 +11,7 @@ import com.dadandev.mengolahdata.models.Mahasiswa;
 
 public class Main {
     public static void main(String[] args) {
-
+        System.out.println("=== List Mahasiswa ====");
         ArrayList<Mahasiswa> mahasiswa = new ArrayList<>();
         mahasiswa.add(new Mahasiswa("Dadan Hidayat", "2300192", 90));
         mahasiswa.add(new Mahasiswa("Anita", "2300292", 100));
@@ -23,6 +23,7 @@ public class Main {
             System.out.println(e);
         });
 
+        System.out.println("=== NAMA UNIK MHS ====");
         Set<String> namaUnik = new HashSet<>();
         for (Mahasiswa mhs : mahasiswa) {
             namaUnik.add(mhs.getNama());

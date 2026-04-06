@@ -14,6 +14,18 @@ public class Mahasiswa {
     public int getNilai() {
         return nilai;
     }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public void setNilai(int nilai) {
+        this.nilai = nilai;
+    }
+
+    public void setNim(String nim) {
+        this.nim = nim;
+    }
     
     public String getNim() {
         return nim;
